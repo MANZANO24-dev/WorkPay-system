@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkPay System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheedt" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+
+   
+    <audio id="backgroundMusic" loop preload="auto">
+        <source src="alexander-nakarada-chase(chosic.com).mp3" type="audio/mpeg">
+    </audio>
+
+    <header class="header">
+        <div class="nav-bar">
+            <div class="logo">
+                <h1>Project System</h1>
+            </div>
+            <div class="nav-list">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#members" class="nav-link">Members</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="home-section">
+        <h2>Welcome to the WorkPay System</h2>
+    </section>
+
+    <div class="toggle-buttons" id="mainButtons">
+        <button onclick="goToPage('login.php');">Login</button>
+        <button onclick="goToPage('register.php');">Register</button>
+        <button onclick="goToPage('hr_login.php');">HR Login</button>
+    </div>
+
+    <section id="about" class="info-section">
+        <h3>About the  WorkPay System</h3>
+        <p>Manage payroll details, track working hours, and ensure accurate salary calculations with our efficient system.</p>
+        <p>Our system streamlines payroll management by tracking attendance, calculating salaries, and generating QR codes for seamless check-ins and check-outs.</p>
+        <p>
+            <strong>Roles & Salaries:</strong><br>
+            Dean: PHP 1,500/day<br>
+            Faculty: PHP 850/day<br>
+            Staff: PHP 650/day<br>
+        </p>
+    <div class="features-section">
+        <h3>Features:</h3>
+        <p><strong>1. User Authentication</strong> - Secure login and registration system for employees and admin.</p>
+        <p><strong>2. Employee Management</strong> - Add, update, assign roles (Dean, Faculty, Staff). Generate unique QR codes.</p>
+        <p><strong>3. Attendance Tracking</strong> - Employees check in by scanning a QR code. Logs working hours.</p>
+        <p><strong>4. Payroll Calculation</strong> - Auto salary calculation. Deducts 5% Pag-IBIG and 5% SSS if salary exceeds PHP 30,000.</p>
+        <p><strong>5. Admin Dashboard</strong> - View employee check-ins, working hours, and salary breakdowns.</p>
+    </div>
+
+    </section>
+    
+    
+    
+    <section id="members" class="Members-info">
+        <h3>By:<p><u> John Angelo C. Manzano</u></p></h3>
+        
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Project WorkPay System. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        let audio = document.getElementById("backgroundMusic");
+
+       
+        document.addEventListener("DOMContentLoaded", () => {
+            audio.play().catch(error => console.log("Autoplay blocked:", error));
+        });
+
+        document.body.addEventListener("click", () => {
+            if (audio.paused) {
+                audio.play().catch(error => console.log("Autoplay blocked:", error));
+            }
+        }, { once: true });
+    </script>
+
+    <script src="js/system.js"></script>
+
+</body>
+</html>

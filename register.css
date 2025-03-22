@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff1744, #6a0dad, #000000); 
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h2 {
+    font-size: 2.8em;
+    margin-bottom: 40px;
+    color: #ff1744;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+.form-container {
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 10px rgba(255, 23, 68, 0.5);
+}
+
+.form-container input,
+.form-container select,
+.form-container button {
+    width: 90%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ff1744;
+    font-size: 1em;
+}
+
+.form-container input {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.form-container select {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid #ff1744;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.form-container select option {
+    background-color: black;
+    color: white;
+}
+
+.form-container button {
+    background: linear-gradient(to right, #ff1744, #6a0dad);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.form-container button:hover {
+    background: linear-gradient(to right, #ff0022, #4b0082);
+    box-shadow: 0 0 10px #ff1744;
+}
+
+.form-container .back-button {
+    background: black;
+    color: white;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+
+.form-container .back-button:hover {
+    background: white;
+    color: black;
+}
+
+.register-link {
+    margin-top: 15px;
+    display: block;
+    font-size: 1.1em;
+    color: #ff1744;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+    color: #ff4c4c;
+}
+
+.error-message, .success-message {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.error-message { color: #ff1744; background: rgba(255, 23, 68, 0.2); }
+.success-message { color: #00ff44; background: rgba(0, 255, 68, 0.2); }
